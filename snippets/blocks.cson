@@ -62,7 +62,7 @@
       \t$1
       })$2
     """
-  'Before-Each async block':
+  'beforeEach() async block':
     prefix: 'befa'
     body: """
       beforeEach (${1:done}) => {
