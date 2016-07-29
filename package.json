@@ -1,0 +1,16 @@
+{
+  "name": "atom-jasmine-es6-snippets",
+  "version": "0.1.0",
+  "description": "code snippets for jasmine using ES6 syntax features",
+  "engine": {
+    "atom": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sappharx/atom-jasmine-es6-snippets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sappharx/atom-jasmine-es6-snippets/issues"
+  },
+  "license": "MIT"
+}
