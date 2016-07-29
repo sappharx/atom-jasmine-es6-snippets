@@ -14,7 +14,7 @@
   'describe() block with template string':
     prefix: 'dest'
     body: """
-      descibe(`${1:description template}`, () => {
+      descibe(`${1:description}`, () => {
       \t$2
       })$3
     """
@@ -28,7 +28,7 @@
   'it() block with template string':
     prefix: 'it'
     body: """
-      it(`${1:description template}`, () => {
+      it(`${1:description}`, () => {
       \t$2
       })$3
     """
