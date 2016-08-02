@@ -43,14 +43,14 @@
   'afterEach() block':
     prefix: 'aft'
     body: """
-      afterEach () => {
+      afterEach(() => {
       \t$1
       })$2
     """
   'afterEach() async block':
     prefix: 'afta'
     body: """
-      afterEach (${1:done}) {
+      afterEach((${1:done}) => {
       \t$2
       \t${1:done}()
       })$3
@@ -58,14 +58,14 @@
   'beforeEach() block':
     prefix: 'bef'
     body: """
-      beforeEach () => {
+      beforeEach(() => {
       \t$1
       })$2
     """
   'beforeEach() async block':
     prefix: 'befa'
     body: """
-      beforeEach (${1:done}) => {
+      beforeEach((${1:done}) => {
       \t$2
       \t${1:done}()
       })$3
