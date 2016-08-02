@@ -26,7 +26,7 @@
       })$3
     """
   'it() block with template string':
-    prefix: 'it'
+    prefix: 'itt'
     body: """
       it(`${1:description}`, () => {
       \t$2
