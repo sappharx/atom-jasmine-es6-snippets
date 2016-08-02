@@ -13,7 +13,7 @@
     body: 'expect(${1:target}).toBeDefined()$2'
   'expect to be':
     prefix: 'eb'
-    body: 'expect(${1:target}).toBe($2:value)$3'
+    body: 'expect(${1:target}).toBe(${2:value})$3'
   'expect to be falsy':
     prefix: 'ef'
     body:   'expect(${1:target}).toBeFalsy()$2'
@@ -50,7 +50,7 @@
     body:   'expect($1).not.$2'
   'expect not to be':
     prefix: 'notb'
-    body:   'expect($1).not.toBe($2:value)$3'
+    body:   'expect($1).not.toBe(${2:value})$3'
   'expect not to be defined':
     prefix: 'notd'
     body:   'expect($1).not.toBeDefined()$2'
@@ -71,4 +71,4 @@
     body:   'expect(${1:target}).not.toHaveBeenCalled()$2'
   'expect not to have been called with':
     prefix: 'notbcw'
-    body:   'expect(${1:target}).not.toHaveBeenCalledWith($2:value)$3'
+    body:   'expect(${1:target}).not.toHaveBeenCalledWith(${2:value})$3'
