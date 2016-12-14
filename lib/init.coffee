@@ -37,9 +37,15 @@ module.exports =
       template = addFullPathToFile 'templates', file
       output = addFullPathToFile 'snippets', file
 
-      newText = oldText = fs.readFileSync template, 'utf8'
-      (Object.keys replacements).forEach (replacement) =>
-        re = new RegExp replacement, 'g'
-        newText = newText.replace re, replacements[replacement]
+      fs.readFile template, 'utf8', (err, oldText) =>
+        if err?
+          return console.error err
 
-      fs.writeFileSync output, newText, 'utf8'
+        newText = oldText
+        (Object.keys replacements).forEach (replacement) =>
+          re = new RegExp replacement, 'g'
+          newText = newText.replace re, replacements[replacement]
+
+          fs.writeFile output, newText, 'utf8', (err) =>
+            if err?
+              return console.error err
