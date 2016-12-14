@@ -2,6 +2,7 @@
   "name": "atom-jasmine-es6-snippets",
   "version": "0.1.3",
   "description": "code snippets for jasmine using ES6 syntax features",
+  "main": "lib/init",
   "engine": {
     "atom": "*"
   },

@@ -1,0 +1,72 @@
+################################
+# Block-level snippets
+################################
+
+'.source.js, .source.ts':
+
+  'describe() block':
+    prefix: 'des'
+    body: """
+      describe('${1:description}', () => {
+      \t$2
+      })$3
+    """
+  'describe() block with template string':
+    prefix: 'dest'
+    body: """
+      descibe(`${1:description}`, () => {
+      \t$2
+      })$3
+    """
+  'it() block':
+    prefix: 'it'
+    body: """
+      it('${1:description}', () => {
+      \t$2
+      })$3
+    """
+  'it() block with template string':
+    prefix: 'itt'
+    body: """
+      it(`${1:description}`, () => {
+      \t$2
+      })$3
+    """
+  'it() async block':
+    prefix: 'ita'
+    body: """
+      it('${1:description}', (${2:done}) => {
+      \t$3
+      \t${2:done}()
+      })$4
+    """
+  'afterEach() block':
+    prefix: 'aft'
+    body: """
+      afterEach(() => {
+      \t$1
+      })$2
+    """
+  'afterEach() async block':
+    prefix: 'afta'
+    body: """
+      afterEach((${1:done}) => {
+      \t$2
+      \t${1:done}()
+      })$3
+    """
+  'beforeEach() block':
+    prefix: 'bef'
+    body: """
+      beforeEach(() => {
+      \t$1
+      })$2
+    """
+  'beforeEach() async block':
+    prefix: 'befa'
+    body: """
+      beforeEach((${1:done}) => {
+      \t$2
+      \t${1:done}()
+      })$3
+    """
