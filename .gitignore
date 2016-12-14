@@ -1,3 +1,5 @@
+snippets/*.cson
+
 # Logs
 logs
 *.log
