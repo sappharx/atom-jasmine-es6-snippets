@@ -8,6 +8,10 @@ This is a modified version of [atom-jasmine](https://github.com/zacharytamas/ato
 ## Install
 `apm install atom-jasmine-es6-snippets`
 
+## Settings
+Note: you'll need to reload Atom for settings to take effect
+`semicolon`: Whether or not to add semicolons
+
 
 ## License
 MIT: http://vsisk.mit-license.org/
