@@ -6,28 +6,28 @@
 
   'jasmine.objectContaining()':
     prefix: 'oc'
-    body:   'jasmine.objectContaining({${1:property}: ${2:value}})'
+    body:   'jasmine.objectContaining({${1:property}: ${2:value}})__sc__$3'
   'jasmine.stringMatching()':
     prefix: 'sm'
-    body:   'jasmine.stringMatching($1)'
+    body:   'jasmine.stringMatching($1)__sc__$2'
   'jasmine.arrayContaining()':
     prefix: 'ac'
-    body:   'jasmine.arrayContaining([$1])'
+    body:   'jasmine.arrayContaining([$1])__sc__$2'
   'jasmine.anything()':
     prefix: 'anyt'
-    body:   'jasmine.anything()'
+    body:   'jasmine.anything()__sc__$1'
   'jasmine.any()':
     prefix: 'any'
-    body:   'jasmine.any($1)'
+    body:   'jasmine.any($1)__sc__$2'
   'jasmine.any(Object)':
     prefix: 'anyo'
-    body:   'jasmine.any(Object)'
+    body:   'jasmine.any(Object)__sc__$1'
   'jasmine.any(Array)':
     prefix: 'anya'
-    body:   'jasmine.any(Array)'
+    body:   'jasmine.any(Array)__sc__$1'
   'jasmine.any(String)':
     prefix: 'anys'
-    body:   'jasmine.any(String)'
+    body:   'jasmine.any(String)__sc__$1'
   'jasmine.any(Number)':
     prefix: 'anyn'
-    body:   'jasmine.any(Number)'
+    body:   'jasmine.any(Number)__sc__$1'
