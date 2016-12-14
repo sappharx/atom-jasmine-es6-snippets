@@ -30,13 +30,12 @@ module.exports =
     replacements =
       '__sc__': if inputConfig.semicolons then ';' else ''
 
-    if not fs.existsSync "#{packageRoot}new-snippets"
-      fs.mkdir "#{packageRoot}new-snippets"
+    if not fs.existsSync "#{packageRoot}snippets"
+      fs.mkdir "#{packageRoot}snippets"
 
     snippetFiles.forEach (file) =>
-      console.log file
-      template = addFullPathToFile 'raw-snippets', file
-      output = addFullPathToFile 'new-snippets', file
+      template = addFullPathToFile 'templates', file
+      output = addFullPathToFile 'snippets', file
 
       newText = oldText = fs.readFileSync template, 'utf8'
       (Object.keys replacements).forEach (replacement) =>
