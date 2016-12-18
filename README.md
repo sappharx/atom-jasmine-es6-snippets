@@ -10,6 +10,7 @@ This is a modified version of [atom-jasmine](https://github.com/zacharytamas/ato
 
 ## Settings
 Note: you'll need to reload Atom for settings to take effect
+
 `semicolon`: Whether or not to add semicolons
 
 
