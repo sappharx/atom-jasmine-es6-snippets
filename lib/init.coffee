@@ -1,14 +1,15 @@
 packageName = 'atom-jasmine-es6-snippets'
 
 fs = require 'fs'
+path = require 'path'
 
 defaultConfig =
   semicolons: false
 
-packageRoot = "#{__dirname}/../"
+packageRoot = path.join __dirname, '..'
 snippetFiles = [ 'blocks', 'expectations', 'matchers', 'spies' ].map (name) => "#{name}.cson"
 
-addFullPathToFile = (directory, file) -> "#{packageRoot}#{directory}/#{file}"
+addFullPathToFile = (directory, file) -> path.join packageRoot, directory, file
 
 inputConfig = defaultConfig
 
@@ -30,8 +31,8 @@ module.exports =
     replacements =
       '__sc__': if inputConfig.semicolons then ';' else ''
 
-    if not fs.existsSync "#{packageRoot}snippets"
-      fs.mkdir "#{packageRoot}snippets"
+    if not fs.existsSync (path.join packageRoot, 'snippets')
+      fs.mkdir (path.join packageRoot, 'snippets')
 
     snippetFiles.forEach (file) =>
       template = addFullPathToFile 'templates', file
