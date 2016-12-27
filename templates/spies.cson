@@ -25,6 +25,12 @@
   'jasmine.createSpy()':
     prefix: 'cspy'
     body:   '${1:target} = jasmine.createSpy(\'${1:target}\')__sc__$2'
+  'jasmine.createSpy().and.returnValue()':
+    prefix: 'jspyr'
+    body:   '${1:target} = jasmine.createSpy(\'${1:target}\').and.returnValue(${2:value})__sc__'
+  'jasmine.createSpy().and.returnValues()':
+    prefix: 'jspyrs'
+    body:   '${1:target} = jasmine.createSpy(\'${1:target}\').and.returnValues(${2:values})__sc__'
   'jasmine.createSpyObj()':
     prefix: 'spyo'
     body:   '${1:obj} = jasmine.createSpyObj(\'${1:obj}\', [\'${2:method}\'])__sc__$3'

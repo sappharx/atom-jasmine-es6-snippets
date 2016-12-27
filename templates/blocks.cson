@@ -18,6 +18,35 @@
       \t$2
       })__sc__$3
     """
+  'fdescribe() block':
+    prefix: 'fdes'
+    body: """
+      fdescribe('${1:description}', () => {
+      \t$2
+      })__sc__$3
+    """
+  'fdescribe() block with template string':
+    prefix: 'fdest'
+    body: """
+      fdescibe(`${1:description}`, () => {
+      \t$2
+      })__sc__$3
+    """
+  'xdescribe() block':
+    prefix: 'xdes'
+    body: """
+      xdescribe('${1:description}', () => {
+      \t$2
+      })__sc__$3
+    """
+  'xdescribe() block with template string':
+    prefix: 'xdest'
+    body: """
+      xdescibe(`${1:description}`, () => {
+      \t$2
+      })__sc__$3
+    """
+
   'it() block':
     prefix: 'it'
     body: """
@@ -40,6 +69,51 @@
       \t${2:done}()
       })__sc__$4
     """
+  'fit() block':
+    prefix: 'fit'
+    body: """
+      fit('${1:description}', () => {
+      \t$2
+      })__sc__$3
+    """
+  'fit() block wfith template string':
+    prefix: 'fitt'
+    body: """
+      fit(`${1:description}`, () => {
+      \t$2
+      })__sc__$3
+    """
+  'fit() async block':
+    prefix: 'fita'
+    body: """
+      fit('${1:description}', (${2:done}) => {
+      \t$3
+      \t${2:done}()
+      })__sc__$4
+    """
+  'xit() block':
+    prefix: 'xit'
+    body: """
+      xit('${1:description}', () => {
+      \t$2
+      })__sc__$3
+    """
+  'xit() block wfith template string':
+    prefix: 'xitt'
+    body: """
+      xit(`${1:description}`, () => {
+      \t$2
+      })__sc__$3
+    """
+  'xit() async block':
+    prefix: 'xita'
+    body: """
+      xit('${1:description}', (${2:done}) => {
+      \t$3
+      \t${2:done}()
+      })__sc__$4
+    """
+
   'afterEach() block':
     prefix: 'aft'
     body: """
