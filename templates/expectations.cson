@@ -6,7 +6,7 @@
 
   'expect':
     prefix: 'ex'
-    body: 'expect($1)__sc__$2'
+    body: 'expect($1)$2'
 
   'expect to be defined':
     prefix: 'ed'
@@ -38,7 +38,7 @@
   'expect to have been called with':
     prefix: 'ebcw'
     body:   'expect(${1:target}).toHaveBeenCalledWith(${2:value})__sc__$3'
-  'expect to have been called time':
+  'expect to have been called times':
     prefix: 'ebct'
     body:   'expect(${1:target}).toHaveBeenCalledTimes(${2:times})__sc__$3'
   'expect to throw error':
