@@ -14,7 +14,7 @@
   'describe() block with template string':
     prefix: 'dest'
     body: """
-      descibe(`${1:description}`, () => {
+      describe(`${1:description}`, () => {
       \t$2
       })__sc__$3
     """
@@ -28,7 +28,7 @@
   'fdescribe() block with template string':
     prefix: 'fdest'
     body: """
-      fdescibe(`${1:description}`, () => {
+      fdescribe(`${1:description}`, () => {
       \t$2
       })__sc__$3
     """
@@ -42,7 +42,7 @@
   'xdescribe() block with template string':
     prefix: 'xdest'
     body: """
-      xdescibe(`${1:description}`, () => {
+      xdescribe(`${1:description}`, () => {
       \t$2
       })__sc__$3
     """
