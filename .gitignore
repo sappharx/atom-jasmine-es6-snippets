@@ -1,4 +1,5 @@
 snippets/*.cson
+.DS_Store
 
 # Logs
 logs
